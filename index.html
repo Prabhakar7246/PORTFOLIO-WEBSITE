@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prabhu | ECE Undergraduate & Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Prabhu<span class="dot">.</span></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Prabhu</h1>
+        <div class="hero-typing-wrap">
+          <span class="typing-prefix">I'm a&nbsp;</span>
+          <span class="typed-text" id="typedText"></span>
+          <span class="cursor">|</span>
+        </div>
+        <p class="hero-bio">
+          An ECE undergraduate passionate about building elegant web experiences. 
+          Currently levelling up in <em>HTML, CSS, JavaScript, React</em> and <em>DSA</em> — 
+          one project at a time.
+        </p>
+        <div class="hero-cta">
+          <a href="#" class="btn btn-primary"><i class="fa-solid fa-download"></i> Download Resume</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-image-ring">
+          <div class="hero-avatar">
+            <i class="fa-solid fa-user-astronaut"></i>
+          </div>
+        </div>
+        <div class="floating-badge badge-1"><i class="fa-brands fa-html5"></i> HTML</div>
+        <div class="floating-badge badge-2"><i class="fa-brands fa-js"></i> JS</div>
+        <div class="floating-badge badge-3"><i class="fa-brands fa-react"></i> React</div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll down</span>
+      <div class="scroll-line"></div>
+    </div>
+    <!-- Background blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-col reveal">
+          <div class="about-card-img">
+            <div class="about-avatar-bg">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="about-stat-card">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-col reveal">
+          <h3 class="about-subtitle">ECE Student & Aspiring Frontend Developer</h3>
+          <p class="about-para">
+            I'm <strong>Prabhu</strong>, a B.Tech Electronics and Communication Engineering (ECE) student with a deep passion for frontend development. While my degree dives into circuits and signals, my heart beats for clean code and beautiful interfaces.
+          </p>
+          <p class="about-para">
+            I enjoy transforming ideas into interactive web experiences using <strong>HTML, CSS, and JavaScript</strong>. I'm actively learning <strong>React</strong> for modern UI development and sharpening my problem-solving skills through <strong>Data Structures & Algorithms</strong> in C++.
+          </p>
+          <div class="about-facts">
+            <div class="fact-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <strong>Degree</strong>
+                <span>B.Tech – Electronics & Communication Engineering</span>
+              </div>
+            </div>
+            <div class="fact-item">
+              <i class="fa-solid fa-map-pin"></i>
+              <div>
+                <strong>Location</strong>
+                <span>India</span>
+              </div>
+            </div>
+            <div class="fact-item">
+              <i class="fa-solid fa-code"></i>
+              <div>
+                <strong>Focus</strong>
+                <span>Frontend Development & DSA</span>
+              </div>
+            </div>
+            <div class="fact-item">
+              <i class="fa-solid fa-heart"></i>
+              <div>
+                <strong>Interests</strong>
+                <span>Web Dev, Problem Solving, Open Source</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal" style="--delay:0ms">
+          <div class="skill-icon html"><i class="fa-brands fa-html5"></i></div>
+          <h3>HTML5</h3>
+          <p>Semantic markup, accessibility, SEO-friendly structure</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+          <span class="skill-pct">85%</span>
+        </div>
+        <div class="skill-card reveal" style="--delay:80ms">
+          <div class="skill-icon css"><i class="fa-brands fa-css3-alt"></i></div>
+          <h3>CSS3</h3>
+          <p>Flexbox, Grid, animations, responsive design</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+          <span class="skill-pct">80%</span>
+        </div>
+        <div class="skill-card reveal" style="--delay:160ms">
+          <div class="skill-icon js"><i class="fa-brands fa-js"></i></div>
+          <h3>JavaScript</h3>
+          <p>DOM manipulation, ES6+, async programming</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+          <span class="skill-pct">70%</span>
+        </div>
+        <div class="skill-card reveal" style="--delay:240ms">
+          <div class="skill-icon cpp"><i class="fa-solid fa-c"></i></div>
+          <h3>C++</h3>
+          <p>OOP, STL, problem solving & DSA practice</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="65%"></div></div>
+          <span class="skill-pct">65%</span>
+        </div>
+        <div class="skill-card reveal" style="--delay:320ms">
+          <div class="skill-icon react"><i class="fa-brands fa-react"></i></div>
+          <h3>React</h3>
+          <p>Components, hooks, state management – Beginner</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="40%"></div></div>
+          <span class="skill-pct">40%</span>
+          <span class="badge-beginner">Beginner</span>
+        </div>
+        <div class="skill-card reveal" style="--delay:400ms">
+          <div class="skill-icon github"><i class="fa-brands fa-github"></i></div>
+          <h3>GitHub</h3>
+          <p>Version control, repositories, collaboration</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="72%"></div></div>
+          <span class="skill-pct">72%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Offer</span>
+        <h2 class="section-title">My <span class="accent">Services</span></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal" style="--delay:0ms">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <h3>Frontend Web Design</h3>
+          <p>Crafting visually appealing and interactive web interfaces using HTML, CSS, and JavaScript with a focus on aesthetics and usability.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> Custom UI layouts</li>
+            <li><i class="fa-solid fa-check"></i> CSS animations & transitions</li>
+            <li><i class="fa-solid fa-check"></i> Cross-browser compatibility</li>
+          </ul>
+        </div>
+        <div class="service-card reveal featured" style="--delay:100ms">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <span class="service-popular">Popular</span>
+          <h3>Responsive Website Design</h3>
+          <p>Building websites that look and function flawlessly across all screen sizes — from mobile phones to wide desktop monitors.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> Mobile-first approach</li>
+            <li><i class="fa-solid fa-check"></i> Flexbox & CSS Grid layouts</li>
+            <li><i class="fa-solid fa-check"></i> Fluid typography & spacing</li>
+          </ul>
+        </div>
+        <div class="service-card reveal" style="--delay:200ms">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-terminal"></i>
+          </div>
+          <h3>Basic JavaScript Projects</h3>
+          <p>Developing small, practical JavaScript-powered applications that demonstrate clean logic, DOM interaction, and real functionality.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> Interactive mini-apps</li>
+            <li><i class="fa-solid fa-check"></i> API integration basics</li>
+            <li><i class="fa-solid fa-check"></i> Game & utility projects</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">My <span class="accent">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal" style="--delay:0ms">
+          <div class="project-img">
+            <i class="fa-solid fa-weight-scale"></i>
+            <div class="project-overlay">
+              <span>JavaScript App</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>BMI Calculator</h3>
+            <p>A clean web app to calculate Body Mass Index with dynamic health status feedback and color-coded results.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn-sm btn-filled"><i class="fa-solid fa-external-link"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="--delay:80ms">
+          <div class="project-img">
+            <i class="fa-solid fa-clock"></i>
+            <div class="project-overlay">
+              <span>JavaScript App</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Digital Clock</h3>
+            <p>A real-time digital clock with 12/24 hour toggle, AM/PM display, and smooth animated time transitions.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn-sm btn-filled"><i class="fa-solid fa-external-link"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="--delay:160ms">
+          <div class="project-img">
+            <i class="fa-solid fa-dice"></i>
+            <div class="project-overlay">
+              <span>JavaScript Game</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Guess The Number</h3>
+            <p>A fun number-guessing game with hints, attempt counter, and dynamic feedback that keeps users engaged.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn-sm btn-filled"><i class="fa-solid fa-external-link"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="--delay:240ms">
+          <div class="project-img">
+            <i class="fa-solid fa-droplet"></i>
+            <div class="project-overlay">
+              <span>JavaScript App</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Color Changer</h3>
+            <p>An interactive app that randomly changes background colors with smooth transitions and hex code display.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn-sm btn-filled"><i class="fa-solid fa-external-link"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="--delay:320ms">
+          <div class="project-img">
+            <i class="fa-solid fa-briefcase"></i>
+            <div class="project-overlay">
+              <span>Web Design</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Portfolio Website</h3>
+            <p>This very portfolio — a dark-themed, glassmorphism-styled personal website showcasing skills and projects.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn-sm btn-filled"><i class="fa-solid fa-external-link"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's Talk</h3>
+          <p>Have a project idea, collaboration, or just want to say hi? My inbox is always open. I'll get back to you as soon as possible!</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <strong>Email</strong>
+                <span>prabhu@example.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <strong>Phone</strong>
+                <span>+91 98765 43210</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong>Location</strong>
+                <span>India</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required/>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX"/>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required/>
+              </div>
+            </div>
+            <div class="form-group full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fa-solid fa-circle-check"></i> Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#home" class="footer-logo">Prabhu<span class="dot">.</span></a>
+        <p>ECE Undergraduate | Frontend Developer</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Prabhu. All rights reserved. Built with <i class="fa-solid fa-heart" style="color:#00d4ff"></i> and lots of coffee.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
