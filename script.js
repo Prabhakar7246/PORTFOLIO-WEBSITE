@@ -1,8 +1,3 @@
-/* =========================================
-   PRABHU PORTFOLIO — script.js
-   ========================================= */
-
-/* ===== NAVBAR: Sticky + Scroll Class ===== */
 const navbar  = document.getElementById('navbar');
 const scrollTopBtn = document.getElementById('scrollTop');
 
@@ -129,46 +124,57 @@ const revealObserver = new IntersectionObserver(
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-/* ===== CONTACT FORM ===== */
+/* ===== CONTACT FORM WITH EMAILJS ===== */
+
 const contactForm = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
 
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', function (e) {
+
   e.preventDefault();
 
-  // Simple validation
-  const inputs = contactForm.querySelectorAll('[required]');
-  let valid = true;
+  const btn = contactForm.querySelector('button[type="submit"]');
 
-  inputs.forEach(input => {
-    input.style.borderColor = '';
-    if (!input.value.trim()) {
-      input.style.borderColor = 'rgba(255,80,80,0.6)';
-      valid = false;
-    }
-    if (input.type === 'email' && input.value) {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(input.value)) {
-        input.style.borderColor = 'rgba(255,80,80,0.6)';
-        valid = false;
-      }
-    }
+  btn.innerHTML =
+    '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+
+  btn.disabled = true;
+
+  emailjs.sendForm(
+    'service_ppksefl',
+    'template_ekdtqbi',
+    this
+  )
+
+  .then(() => {
+
+    formSuccess.classList.add('show');
+
+    contactForm.reset();
+
+    btn.innerHTML =
+      '<i class="fa-solid fa-paper-plane"></i> Send Message';
+
+    btn.disabled = false;
+
+    setTimeout(() => {
+      formSuccess.classList.remove('show');
+    }, 4000);
+
+  })
+
+  .catch((error) => {
+
+    alert('Failed to send message.');
+
+    console.log(error);
+
+    btn.innerHTML =
+      '<i class="fa-solid fa-paper-plane"></i> Send Message';
+
+    btn.disabled = false;
   });
 
-  if (!valid) return;
-
-  // Simulate sending
-  const btn = contactForm.querySelector('button[type="submit"]');
-  btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
-  btn.disabled  = true;
-
-  setTimeout(() => {
-    contactForm.reset();
-    btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Message';
-    btn.disabled  = false;
-    formSuccess.classList.add('show');
-    setTimeout(() => formSuccess.classList.remove('show'), 4000);
-  }, 1500);
 });
 
 /* ===== INPUT FOCUS: clear error border ===== */
@@ -187,7 +193,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-/* ===== PROJECT CARD: subtle parallax on mouse move ===== */
 document.querySelectorAll('.project-card').forEach(card => {
   card.addEventListener('mousemove', (e) => {
     const rect    = card.getBoundingClientRect();
@@ -202,7 +207,6 @@ document.querySelectorAll('.project-card').forEach(card => {
   });
 });
 
-/* ===== SKILL CARD: subtle tilt ===== */
 document.querySelectorAll('.skill-card').forEach(card => {
   card.addEventListener('mousemove', (e) => {
     const rect    = card.getBoundingClientRect();
@@ -217,7 +221,6 @@ document.querySelectorAll('.skill-card').forEach(card => {
   });
 });
 
-/* ===== FOOTER YEAR (auto-update) ===== */
 const footerYear = document.querySelector('.footer-bottom p');
 if (footerYear) {
   footerYear.innerHTML = footerYear.innerHTML.replace(
@@ -226,7 +229,6 @@ if (footerYear) {
   );
 }
 
-/* ===== HERO greeting time-of-day ===== */
 const greetingEl = document.querySelector('.hero-greeting');
 if (greetingEl) {
   const hour = new Date().getHours();
