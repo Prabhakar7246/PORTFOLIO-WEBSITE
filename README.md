@@ -18,5 +18,5 @@ Modern UI with clean layout
 HTML5
 CSS3
 JavaScript
-https://portfolio-website-48tuyq4le-prabhakar7246s-projects.vercel.app
+https://portfolio-website-ejdhol9if-prabhakar7246s-projects.vercel.app
 <img width="605" height="377" alt="Screenshot 2026-05-10 053143" src="https://github.com/user-attachments/assets/67bf238d-e03a-4e6e-9594-598c3a479a1f" />
